@@ -50,7 +50,7 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash[:winter].each do |holiday, value|
     new_holiday_hash << value
   end
-  new_holiday_hash.flatten 
+  new_holiday_hash.flatten
 end
 
 def all_supplies_in_holidays(holiday_hash)
@@ -65,8 +65,8 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.capitalize}:"
     holiday.each do |second_holiday, item|
       puts "  #{second_holiday.to_s.split("_").map}"
-    end 
-  end 
+    end
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
